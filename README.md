@@ -252,12 +252,12 @@ PORT=6000 node server.js
 
 ---
 
-## 👨‍💻 Author
+## 👨‍💻 Author-> Manas Prajapati
 
 This project was created as part of a Full Stack Developer Internship Assignment.
 
 ---
 
 
-*If you want any part of these instructions changed (more screenshots, exact commands for Git/GitHub, or a single-click `start` script), tell me and I’ll edit the README.*
+
 
