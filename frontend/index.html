@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Patient Portal — Documents</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <main class="container">
+        <h1>Patient Documents</h1>
+
+        <section class="card">
+            <h2>Upload PDF</h2>
+            <form id="uploadForm">
+                <input id="fileInput" name="file" type="file" accept="application/pdf" />
+                <div class="row">
+                    <button id="uploadBtn" type="submit">Upload</button>
+                    <span id="uploadStatus" class="muted"></span>
+                </div>
+            </form>
+        </section>
+
+        <section class="card">
+            <h2>Uploaded Files</h2>
+            <div id="message" class="muted"></div>
+            <table id="filesTable" class="files-table" aria-live="polite">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Size</th>
+                        <th>Uploaded</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="filesTbody">
+                    <!-- populated by JS -->
+                </tbody>
+            </table>
+        </section>
+
+        <footer class="foot muted">Local demo • Backend: <code>http://localhost:5000</code></footer>
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
